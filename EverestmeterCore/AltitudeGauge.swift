@@ -12,7 +12,7 @@ extension AltitudeGauge {
     private static func verticalOffset(for altitude: Altitude, viewHeight: Double) -> Double {
         let altitudeRatio = altitude.meters / 8848
         let viewRatio = 1 - altitudeRatio
-        return Double(viewRatio) * viewHeight
+        return (Double(viewRatio) * viewHeight).rounded()
     }
     
     private static func thickness(forViewHeight viewHeight: Double) -> Double {

@@ -28,6 +28,11 @@ extension AltitudeGaugeTests {
         let gauge = AltitudeGauge(altitude: Altitude(meters: 2212), viewHeight: 800)
         XCTAssertEqual(gauge.verticalOffset, 600)
     }
+    
+    func testGaugeVerticalOffsetRounding() {
+        let gauge = AltitudeGauge(altitude: Altitude(meters: 8848 / 8), viewHeight: 800 - 1)
+        XCTAssertEqual(gauge.verticalOffset, (7 / 8) * 800 - 1)
+    }
 }
 
 extension AltitudeGaugeTests {
