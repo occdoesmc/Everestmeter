@@ -1,4 +1,4 @@
-public struct AtmosphericPressure {
+public struct Pressure {
     let kilopascals: Double
     
     public init(kilopascals: Double) {

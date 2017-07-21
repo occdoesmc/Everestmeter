@@ -4,7 +4,7 @@ import EverestmeterCore
 final class Barometer {
     let isPressureDataAvailable = CMAltimeter.isRelativeAltitudeAvailable()
     
-    var onDidMeasurePressure: (AtmosphericPressure) -> Void = { _ in }
+    var onDidMeasurePressure: (Pressure) -> Void = { _ in }
     var onError: (String) -> Void = { _ in }
     
     private let altimeter = CMAltimeter()
@@ -26,7 +26,7 @@ final class Barometer {
     private func process(_ altitudeData: CMAltitudeData?) {
         guard let altitudeData = altitudeData else { return }
         let kilopascals = Double(altitudeData.pressure)
-        let pressure = AtmosphericPressure(kilopascals: kilopascals)
+        let pressure = Pressure(kilopascals: kilopascals)
         onDidMeasurePressure(pressure)
     }
     

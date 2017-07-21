@@ -19,12 +19,12 @@
 		5514300F1EF4408F00DF9872 /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430001EF4408F00DF9872 /* Altitude.swift */; };
 		551430121EF4408F00DF9872 /* AltitudeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430031EF4408F00DF9872 /* AltitudeDescription.swift */; };
 		551430151EF4408F00DF9872 /* AltitudeGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430061EF4408F00DF9872 /* AltitudeGauge.swift */; };
-		5514301B1EF4408F00DF9872 /* AtmosphericPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300C1EF4408F00DF9872 /* AtmosphericPressure.swift */; };
+		5514301B1EF4408F00DF9872 /* Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300C1EF4408F00DF9872 /* Pressure.swift */; };
 		5514301C1EF4408F00DF9872 /* Double+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300D1EF4408F00DF9872 /* Double+Power.swift */; };
 		5514301D1EF440B600DF9872 /* AltitudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430021EF4408F00DF9872 /* AltitudeTests.swift */; };
 		5514301E1EF440B600DF9872 /* AltitudeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */; };
 		5514301F1EF440B600DF9872 /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
-		552EF4F91EFD727A00905CFD /* AtmosphericPressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* AtmosphericPressureTests.swift */; };
+		552EF4F91EFD727A00905CFD /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
 		5552D7181F1F968700216796 /* AltitudeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7171F1F968700216796 /* AltitudeDataView.swift */; };
 		5552D71A1F1F96CD00216796 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7191F1F96CD00216796 /* ErrorView.swift */; };
 		5552D71C1F1F979300216796 /* AltitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D71B1F1F979300216796 /* AltitudeView.swift */; };
@@ -32,12 +32,12 @@
 		556BCC291F1CEA860048F34B /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430001EF4408F00DF9872 /* Altitude.swift */; };
 		556BCC2A1F1CEA860048F34B /* AltitudeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430031EF4408F00DF9872 /* AltitudeDescription.swift */; };
 		556BCC2B1F1CEA860048F34B /* AltitudeGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430061EF4408F00DF9872 /* AltitudeGauge.swift */; };
-		556BCC2C1F1CEA860048F34B /* AtmosphericPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300C1EF4408F00DF9872 /* AtmosphericPressure.swift */; };
+		556BCC2C1F1CEA860048F34B /* Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300C1EF4408F00DF9872 /* Pressure.swift */; };
 		556BCC2D1F1CEA860048F34B /* Double+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300D1EF4408F00DF9872 /* Double+Power.swift */; };
 		556BCC2E1F1CEA9F0048F34B /* AltitudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430021EF4408F00DF9872 /* AltitudeTests.swift */; };
 		556BCC2F1F1CEA9F0048F34B /* AltitudeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */; };
 		556BCC301F1CEA9F0048F34B /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
-		556BCC311F1CEA9F0048F34B /* AtmosphericPressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* AtmosphericPressureTests.swift */; };
+		556BCC311F1CEA9F0048F34B /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
 		556BCC331F1CFCE10048F34B /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
 		55E685AE1F20F1540048BB73 /* EverestBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AD1F20F1540048BB73 /* EverestBottom.png */; };
 		55E685B01F20F15A0048BB73 /* EverestTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AF1F20F15A0048BB73 /* EverestTop.png */; };
@@ -116,9 +116,9 @@
 		551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeDescriptionTests.swift; sourceTree = "<group>"; };
 		551430061EF4408F00DF9872 /* AltitudeGauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeGauge.swift; sourceTree = "<group>"; };
 		551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeGaugeTests.swift; sourceTree = "<group>"; };
-		5514300C1EF4408F00DF9872 /* AtmosphericPressure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmosphericPressure.swift; sourceTree = "<group>"; };
+		5514300C1EF4408F00DF9872 /* Pressure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pressure.swift; sourceTree = "<group>"; };
 		5514300D1EF4408F00DF9872 /* Double+Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Power.swift"; sourceTree = "<group>"; };
-		552EF4F81EFD727A00905CFD /* AtmosphericPressureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmosphericPressureTests.swift; sourceTree = "<group>"; };
+		552EF4F81EFD727A00905CFD /* PressureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureTests.swift; sourceTree = "<group>"; };
 		5552D7171F1F968700216796 /* AltitudeDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeDataView.swift; sourceTree = "<group>"; };
 		5552D7191F1F96CD00216796 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5552D71B1F1F979300216796 /* AltitudeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeView.swift; sourceTree = "<group>"; };
@@ -240,8 +240,8 @@
 				551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */,
 				551430061EF4408F00DF9872 /* AltitudeGauge.swift */,
 				551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */,
-				5514300C1EF4408F00DF9872 /* AtmosphericPressure.swift */,
-				552EF4F81EFD727A00905CFD /* AtmosphericPressureTests.swift */,
+				5514300C1EF4408F00DF9872 /* Pressure.swift */,
+				552EF4F81EFD727A00905CFD /* PressureTests.swift */,
 				5514300D1EF4408F00DF9872 /* Double+Power.swift */,
 				55142FD91EF43D2500DF9872 /* Info.plist */,
 				55142FF41EF43DAA00DF9872 /* InfoTests.plist */,
@@ -522,7 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5514301B1EF4408F00DF9872 /* AtmosphericPressure.swift in Sources */,
+				5514301B1EF4408F00DF9872 /* Pressure.swift in Sources */,
 				551430121EF4408F00DF9872 /* AltitudeDescription.swift in Sources */,
 				551430151EF4408F00DF9872 /* AltitudeGauge.swift in Sources */,
 				5514301C1EF4408F00DF9872 /* Double+Power.swift in Sources */,
@@ -534,7 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552EF4F91EFD727A00905CFD /* AtmosphericPressureTests.swift in Sources */,
+				552EF4F91EFD727A00905CFD /* PressureTests.swift in Sources */,
 				5514301F1EF440B600DF9872 /* AltitudeGaugeTests.swift in Sources */,
 				5514301E1EF440B600DF9872 /* AltitudeDescriptionTests.swift in Sources */,
 				5514301D1EF440B600DF9872 /* AltitudeTests.swift in Sources */,
@@ -546,7 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556BCC2D1F1CEA860048F34B /* Double+Power.swift in Sources */,
-				556BCC2C1F1CEA860048F34B /* AtmosphericPressure.swift in Sources */,
+				556BCC2C1F1CEA860048F34B /* Pressure.swift in Sources */,
 				556BCC2A1F1CEA860048F34B /* AltitudeDescription.swift in Sources */,
 				556BCC2B1F1CEA860048F34B /* AltitudeGauge.swift in Sources */,
 				556BCC291F1CEA860048F34B /* Altitude.swift in Sources */,
@@ -557,7 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556BCC311F1CEA9F0048F34B /* AtmosphericPressureTests.swift in Sources */,
+				556BCC311F1CEA9F0048F34B /* PressureTests.swift in Sources */,
 				556BCC301F1CEA9F0048F34B /* AltitudeGaugeTests.swift in Sources */,
 				556BCC2F1F1CEA9F0048F34B /* AltitudeDescriptionTests.swift in Sources */,
 				556BCC2E1F1CEA9F0048F34B /* AltitudeTests.swift in Sources */,

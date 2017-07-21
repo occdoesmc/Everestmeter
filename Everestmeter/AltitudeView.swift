@@ -18,8 +18,8 @@ extension AltitudeView {
     }
     
     func showDemo() {
-        let pressure = AtmosphericPressure(kilopascals: 90)
-        let altitude = Altitude(atmosphericPressure: pressure)
+        let pressure = Pressure(kilopascals: 90)
+        let altitude = Altitude(pressure: pressure)
         dataView.showAltitude(altitude)
         errorView.hideError()
     }

@@ -39,7 +39,7 @@ final class AltitudeViewController: UIViewController {
     
     private func observePressure() {
         barometer.onDidMeasurePressure = { [altitudeView] pressure in
-            let altitude = Altitude(atmosphericPressure: pressure)
+            let altitude = Altitude(pressure: pressure)
             altitudeView?.showAltitude(altitude)
         }
     }

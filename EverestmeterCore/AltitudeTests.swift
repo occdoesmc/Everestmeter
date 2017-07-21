@@ -10,14 +10,14 @@ import XCTest
 // http://keisan.casio.com/exec/system/1224585971
 final class AltitudeTests: XCTestCase {
     func testCalculatesAltitudeAtSeaLevel() {
-        let atmosphericPressure = AtmosphericPressure(kilopascals: 101.325)
-        let altitude = Altitude(atmosphericPressure: atmosphericPressure)
+        let pressure = Pressure(kilopascals: 101.325)
+        let altitude = Altitude(pressure: pressure)
         XCTAssertEqual(altitude.meters, 0)
     }
     
     func testCalculatesAltitude1000Meters() {
-        let atmosphericPressure = AtmosphericPressure(kilopascals: 90.1492)
-        let altitude = Altitude(atmosphericPressure: atmosphericPressure)
+        let pressure = Pressure(kilopascals: 90.1492)
+        let altitude = Altitude(pressure: pressure)
         XCTAssertEqualWithAccuracy(altitude.meters, 1000, accuracy: 0.1)
     }
 }
