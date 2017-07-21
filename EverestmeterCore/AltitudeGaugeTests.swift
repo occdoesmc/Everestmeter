@@ -20,13 +20,13 @@ extension AltitudeGaugeTests {
     }
     
     func testGaugeVerticalOffset1() {
-        let gauge = AltitudeGauge(altitude: Altitude(meters: 4424), viewHeight: 400)
-        XCTAssertEqual(gauge.verticalOffset, 200)
+        let gauge = AltitudeGauge(altitude: Altitude(meters: 8848 / 2), viewHeight: 400)
+        XCTAssertEqual(gauge.verticalOffset, 400 / 2)
     }
     
     func testGaugeVerticalOffset2() {
-        let gauge = AltitudeGauge(altitude: Altitude(meters: 2212), viewHeight: 800)
-        XCTAssertEqual(gauge.verticalOffset, 600)
+        let gauge = AltitudeGauge(altitude: Altitude(meters: 8848 / 4), viewHeight: 800)
+        XCTAssertEqual(gauge.verticalOffset, 800 - (1 / 4 * 800))
     }
     
     func testGaugeVerticalOffsetRounding() {
