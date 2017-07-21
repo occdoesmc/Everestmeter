@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Altitude View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AltitudeViewController" customModule="Everestmeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="AltitudeView" customModule="Everestmeter" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fKT-qW-niA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EverestTop.png" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-2F-wb9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EverestBottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="EXi-pD-lle">
+                                        <rect key="frame" x="0.0" y="626" width="414" height="110"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jVC-2F-wb9" firstAttribute="height" secondItem="EXi-pD-lle" secondAttribute="height" multiplier="2722:478" id="bQX-ID-33N"/>
+                                </constraints>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wn9-fA-djB" customClass="AltitudeDataView" customModule="Everestmeter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEZ-0a-m9a">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="Kq9-Oa-tjV"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a5-FM-HX6">
+                                        <rect key="frame" x="44" y="11" width="76" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8a5-FM-HX6" firstAttribute="top" secondItem="aEZ-0a-m9a" secondAttribute="bottom" constant="1" id="JPC-im-LDK"/>
+                                    <constraint firstItem="aEZ-0a-m9a" firstAttribute="leading" secondItem="wn9-fA-djB" secondAttribute="leading" id="SRC-w3-FMN"/>
+                                    <constraint firstItem="8a5-FM-HX6" firstAttribute="leading" secondItem="wn9-fA-djB" secondAttribute="leading" constant="44" id="dda-Td-uvG"/>
+                                    <constraint firstAttribute="trailing" secondItem="aEZ-0a-m9a" secondAttribute="trailing" id="j8E-nS-qgO"/>
+                                    <constraint firstItem="aEZ-0a-m9a" firstAttribute="top" secondItem="wn9-fA-djB" secondAttribute="top" id="kkb-cU-yi3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="altitudeLabel" destination="8a5-FM-HX6" id="Jje-PA-2qS"/>
+                                    <outlet property="gaugeHeightConstraint" destination="Kq9-Oa-tjV" id="tcj-Pb-RNA"/>
+                                    <outlet property="gaugeTopConstraint" destination="kkb-cU-yi3" id="a0h-Xw-Mxc"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-VB-tip" customClass="ErrorView" customModule="Everestmeter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtF-ea-0Kh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9wu-9k-bwQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3it-ba-JTI">
+                                                    <rect key="frame" x="136.66666666666669" y="355" width="141.00000000000006" height="26.333333333333314"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3it-ba-JTI" firstAttribute="centerX" secondItem="9wu-9k-bwQ" secondAttribute="centerX" id="89v-GL-Y0l"/>
+                                                <constraint firstItem="3it-ba-JTI" firstAttribute="centerY" secondItem="9wu-9k-bwQ" secondAttribute="centerY" id="VYI-iO-6DH"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="extraLight"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UtF-ea-0Kh" secondAttribute="trailing" id="TbQ-L0-c6e"/>
+                                    <constraint firstAttribute="bottom" secondItem="UtF-ea-0Kh" secondAttribute="bottom" id="dwn-3u-jTQ"/>
+                                    <constraint firstItem="UtF-ea-0Kh" firstAttribute="top" secondItem="8dv-VB-tip" secondAttribute="top" id="jQ1-7X-uKf"/>
+                                    <constraint firstItem="UtF-ea-0Kh" firstAttribute="leading" secondItem="8dv-VB-tip" secondAttribute="leading" id="rCM-KJ-jEV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="errorLabel" destination="3it-ba-JTI" id="9JH-gp-u5O"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8dv-VB-tip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2zo-h3-cqF"/>
+                            <constraint firstItem="wn9-fA-djB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Mk-bn-Zvr"/>
+                            <constraint firstItem="jVC-2F-wb9" firstAttribute="height" secondItem="wn9-fA-djB" secondAttribute="height" id="9Be-U7-Dzd"/>
+                            <constraint firstItem="fKT-qW-niA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9oI-pP-wJq"/>
+                            <constraint firstAttribute="trailing" secondItem="fKT-qW-niA" secondAttribute="trailing" id="KnT-Rk-VNj"/>
+                            <constraint firstItem="8dv-VB-tip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kwp-2o-JK5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fKT-qW-niA" secondAttribute="bottom" id="Qdq-ko-z7y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8dv-VB-tip" secondAttribute="bottom" id="U1v-Td-pPV"/>
+                            <constraint firstItem="wn9-fA-djB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YrN-e3-3V9"/>
+                            <constraint firstAttribute="trailing" secondItem="8dv-VB-tip" secondAttribute="trailing" id="ZRI-Bf-zhR"/>
+                            <constraint firstAttribute="trailing" secondItem="wn9-fA-djB" secondAttribute="trailing" id="b1b-dT-DJl"/>
+                            <constraint firstItem="fKT-qW-niA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gVE-fy-h9e"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="dataView" destination="wn9-fA-djB" id="hMV-c5-NMh"/>
+                            <outlet property="errorView" destination="8dv-VB-tip" id="mHB-ie-Oyo"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="altitudeView" destination="8bC-Xf-vdC" id="9lQ-bF-eKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530.39999999999998" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EverestBottom.png" width="1800" height="485"/>
+        <image name="EverestTop.png" width="1800" height="2715"/>
+    </resources>
+</document>
