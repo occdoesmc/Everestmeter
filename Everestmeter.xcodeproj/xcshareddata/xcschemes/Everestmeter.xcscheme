@@ -82,13 +82,12 @@
             ReferencedContainer = "container:Everestmeter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "--demo-mode"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "SIMULATED_PRESSURE"
+            value = "80"
+            isEnabled = "YES">
+         </EnvironmentVariable>
          <EnvironmentVariable
             key = "OS_ACTIVITY_MODE"
             value = "disable"

@@ -50,7 +50,13 @@ final class AltitudeViewController: UIViewController {
 }
 
 private extension UIApplication {
-    static var isDemoModeEnabled: Bool {
-        return ProcessInfo.processInfo.arguments.contains("--demo-mode")
+    static var simulatedPressure: Double? {
+        guard let pressure = ProcessInfo.processInfo.environment["SIMULATED_PRESSURE"] else {
+            return nil
+        }
+        guard let value = Double(pressure) else {
+            fatalError("SIMULATED_PRESSURE must be a number")
+        }
+        return value
     }
 }
