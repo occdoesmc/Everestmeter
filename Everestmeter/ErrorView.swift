@@ -9,7 +9,7 @@ extension ErrorView {
         isHidden = false
         errorLabel.text = error
     }
-    
+
     func hideError() {
         isHidden = true
         errorLabel.text = nil

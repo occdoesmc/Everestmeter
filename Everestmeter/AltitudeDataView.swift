@@ -16,7 +16,7 @@ extension AltitudeDataView {
         gaugeTopConstraint.constant = CGFloat(altitudeGauge.verticalOffset)
         gaugeHeightConstraint.constant = CGFloat(altitudeGauge.thickness)
     }
-    
+
     func hideAltitude() {
         isHidden = true
         altitudeLabel.text = nil

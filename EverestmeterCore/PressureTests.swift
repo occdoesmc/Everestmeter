@@ -11,7 +11,7 @@ final class PressureTests: XCTestCase {
         let pressure = Pressure(kilopascals: 300)
         XCTAssertEqual(pressure.kilopascals, 300)
     }
-    
+
     func testKilopascals2() {
         let pressure = Pressure(kilopascals: 400)
         XCTAssertEqual(pressure.kilopascals, 400)

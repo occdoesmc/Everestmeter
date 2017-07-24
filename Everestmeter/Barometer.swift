@@ -3,12 +3,12 @@ import EverestmeterCore
 
 final class Barometer {
     let isPressureDataAvailable = CMAltimeter.isRelativeAltitudeAvailable()
-    
+
     var onDidMeasurePressure: (Pressure) -> Void = { _ in }
     var onError: (String) -> Void = { _ in }
-    
+
     private let altimeter = CMAltimeter()
-    
+
     func startMeasuring() {
         let operationQueue = OperationQueue()
         altimeter.startRelativeAltitudeUpdates(to: operationQueue) { [weak self] altitudeData, error in
@@ -18,7 +18,7 @@ final class Barometer {
             }
         }
     }
-    
+
     func stopMeasuring() {
         altimeter.stopRelativeAltitudeUpdates()
     }
@@ -29,7 +29,7 @@ final class Barometer {
         let pressure = Pressure(kilopascals: kilopascals)
         onDidMeasurePressure(pressure)
     }
-    
+
     private func process(_ error: Error?) {
         guard let error = error else { return }
         onError(error.localizedDescription)

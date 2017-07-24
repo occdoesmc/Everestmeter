@@ -12,13 +12,13 @@ final class AltitudeDescriptionTests: XCTestCase {
         let altitudeDescription = AltitudeDescription(altitude: altitude)
         XCTAssertEqual(altitudeDescription.text, "1000m")
     }
-    
+
     func testFormatsOtherAltitude() {
         let altitude = Altitude(meters: 2000)
         let altitudeDescription = AltitudeDescription(altitude: altitude)
         XCTAssertEqual(altitudeDescription.text, "2000m")
     }
-    
+
     func testRoundsAltitude() {
         let altitude = Altitude(meters: 2999.9)
         let altitudeDescription = AltitudeDescription(altitude: altitude)
