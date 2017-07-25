@@ -85,8 +85,8 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "SIMULATED_PRESSURE"
-            value = "20"
-            isEnabled = "YES">
+            value = "100"
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "OS_ACTIVITY_MODE"
