@@ -10,10 +10,6 @@ final class AltitudeViewController: UIViewController {
         UIApplication.isDemoModeEnabled ? showDemo() : showAltitude()
     }
 
-    @IBAction private func userDidTapDismissButton() {
-        dismiss(animated: true, completion: nil)
-    }
-
     private func showDemo() {
         altitudeView.showDemo()
     }
