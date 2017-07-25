@@ -7,11 +7,7 @@ final class AltitudeViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIApplication.isDemoModeEnabled ? showDemo() : showAltitude()
-    }
-
-    private func showDemo() {
-        altitudeView.showDemo()
+        showAltitude()
     }
 
     private func showAltitude() {
@@ -23,7 +19,7 @@ final class AltitudeViewController: UIViewController {
 
     private func checkPressureAvailability() {
         guard !barometer.isPressureDataAvailable else { return }
-        let error = NSLocalizedString("Barometer Not Available", comment: "Alert title")
+        let error = NSLocalizedString("Barometer Not Available", comment: "")
         altitudeView.showError(error)
     }
 
@@ -42,17 +38,5 @@ final class AltitudeViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-}
-
-private extension UIApplication {
-    static var simulatedPressure: Double? {
-        guard let pressure = ProcessInfo.processInfo.environment["SIMULATED_PRESSURE"] else {
-            return nil
-        }
-        guard let value = Double(pressure) else {
-            fatalError("SIMULATED_PRESSURE must be a number")
-        }
-        return value
     }
 }
