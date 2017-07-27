@@ -9,8 +9,10 @@ final class SimulatedBarometer: Barometer {
 
 extension SimulatedBarometer {
     static var isPressureDataAvailable: Bool {
-        guard case .some = SimulatedBarometer.pressure else { return false }
-        return true
+        switch SimulatedBarometer.pressure {
+        case .none: return false
+        default: return true
+        }
     }
 }
 
