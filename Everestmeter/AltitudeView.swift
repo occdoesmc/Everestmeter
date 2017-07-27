@@ -16,11 +16,4 @@ extension AltitudeView {
         dataView.hideAltitude()
         errorView.showError(error)
     }
-
-    func showDemo() {
-        let pressure = Pressure(kilopascals: 90)
-        let altitude = Altitude(pressure: pressure)
-        dataView.showAltitude(altitude)
-        errorView.hideError()
-    }
 }

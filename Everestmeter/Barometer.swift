@@ -1,37 +1,16 @@
-import CoreMotion
 import EverestmeterCore
 
-final class Barometer {
-    let isPressureDataAvailable = CMAltimeter.isRelativeAltitudeAvailable()
+typealias BarometerPressureHandler = (Pressure) -> Void
+typealias BarometerErrorHandler = (String) -> Void
 
-    var onDidMeasurePressure: (Pressure) -> Void = { _ in }
-    var onError: (String) -> Void = { _ in }
+protocol Barometer: class {
+    static var isPressureDataAvailable: Bool { get }
 
-    private let altimeter = CMAltimeter()
+    var onDidMeasurePressure: BarometerPressureHandler? { get set }
+    var onError: BarometerErrorHandler? { get set }
 
-    func startMeasuring() {
-        let operationQueue = OperationQueue()
-        altimeter.startRelativeAltitudeUpdates(to: operationQueue) { [weak self] altitudeData, error in
-            OperationQueue.main.addOperation {
-                self?.process(altitudeData)
-                self?.process(error)
-            }
-        }
-    }
+    init()
 
-    func stopMeasuring() {
-        altimeter.stopRelativeAltitudeUpdates()
-    }
-
-    private func process(_ altitudeData: CMAltitudeData?) {
-        guard let altitudeData = altitudeData else { return }
-        let kilopascals = Double(altitudeData.pressure)
-        let pressure = Pressure(kilopascals: kilopascals)
-        onDidMeasurePressure(pressure)
-    }
-
-    private func process(_ error: Error?) {
-        guard let error = error else { return }
-        onError(error.localizedDescription)
-    }
+    func startMeasuring()
+    func stopMeasuring()
 }

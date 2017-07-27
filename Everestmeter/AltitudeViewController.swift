@@ -3,19 +3,16 @@ import EverestmeterCore
 
 final class AltitudeViewController: UIViewController {
     @IBOutlet private var altitudeView: AltitudeView!
-    private let barometer = Barometer()
+
+    private let barometer = preferredBarometerType.init()
+
+    static var preferredBarometerType: Barometer.Type {
+        return SimulatedBarometer.isPressureDataAvailable ? SimulatedBarometer.self : DeviceBarometer.self
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIApplication.isDemoModeEnabled ? showDemo() : showAltitude()
-    }
-
-    @IBAction private func userDidTapDismissButton() {
-        dismiss(animated: true, completion: nil)
-    }
-
-    private func showDemo() {
-        altitudeView.showDemo()
+        showAltitude()
     }
 
     private func showAltitude() {
@@ -26,8 +23,8 @@ final class AltitudeViewController: UIViewController {
     }
 
     private func checkPressureAvailability() {
-        guard !barometer.isPressureDataAvailable else { return }
-        let error = NSLocalizedString("Barometer Not Available", comment: "Alert title")
+        guard !AltitudeViewController.preferredBarometerType.isPressureDataAvailable else { return }
+        let error = NSLocalizedString("Barometer Not Available", comment: "")
         altitudeView.showError(error)
     }
 
@@ -46,11 +43,5 @@ final class AltitudeViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-}
-
-private extension UIApplication {
-    static var isDemoModeEnabled: Bool {
-        return ProcessInfo.processInfo.arguments.contains("--demo-mode")
     }
 }
