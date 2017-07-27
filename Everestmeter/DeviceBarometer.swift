@@ -2,17 +2,19 @@ import CoreMotion
 import EverestmeterCore
 
 final class DeviceBarometer: Barometer {
+    var onDidMeasurePressure: BarometerPressureHandler?
+    var onError: BarometerErrorHandler?
+    fileprivate let altimeter = CMAltimeter()
+    init() {}
+}
+
+extension DeviceBarometer {
     static var isPressureDataAvailable: Bool {
         return CMAltimeter.isRelativeAltitudeAvailable()
     }
+}
 
-    var onDidMeasurePressure: BarometerPressureHandler?
-    var onError: BarometerErrorHandler?
-
-    fileprivate let altimeter = CMAltimeter()
-
-    init() {}
-
+extension DeviceBarometer {
     func startMeasuring() {
         let operationQueue = OperationQueue()
         altimeter.startRelativeAltitudeUpdates(to: operationQueue) { [weak self] altitudeData, error in

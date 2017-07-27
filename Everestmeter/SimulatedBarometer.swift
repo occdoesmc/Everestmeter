@@ -2,16 +2,19 @@ import Foundation
 import EverestmeterCore
 
 final class SimulatedBarometer: Barometer {
+    var onDidMeasurePressure: BarometerPressureHandler?
+    var onError: BarometerErrorHandler?
+    init() {}
+}
+
+extension SimulatedBarometer {
     static var isPressureDataAvailable: Bool {
         guard case .some = SimulatedBarometer.pressure else { return false }
         return true
     }
+}
 
-    var onDidMeasurePressure: BarometerPressureHandler?
-    var onError: BarometerErrorHandler?
-
-    init() {}
-
+extension SimulatedBarometer {
     func startMeasuring() {
         switch SimulatedBarometer.pressure {
         case .none:
@@ -24,7 +27,6 @@ final class SimulatedBarometer: Barometer {
     }
 
     func stopMeasuring() {}
-
 }
 
 private extension SimulatedBarometer {
