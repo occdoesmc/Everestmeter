@@ -2,45 +2,53 @@ import UIKit
 import EverestmeterCore
 
 final class AltitudeViewController: UIViewController {
-    @IBOutlet private var altitudeView: AltitudeView!
+    @IBOutlet fileprivate var altitudeView: AltitudeView!
+    fileprivate let barometer = preferredBarometerType.init()
+}
 
-    private let barometer = preferredBarometerType.init()
 
-    static var preferredBarometerType: Barometer.Type {
-        return SimulatedBarometer.isPressureDataAvailable ? SimulatedBarometer.self : DeviceBarometer.self
-    }
-
+extension AltitudeViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         showAltitude()
     }
+}
 
-    private func showAltitude() {
+private extension AltitudeViewController {
+    func showAltitude() {
         checkPressureAvailability()
         observeErrors()
         observePressure()
         barometer.startMeasuring()
     }
 
-    private func checkPressureAvailability() {
+    func checkPressureAvailability() {
         guard !AltitudeViewController.preferredBarometerType.isPressureDataAvailable else { return }
         let error = NSLocalizedString("Barometer Not Available", comment: "")
         altitudeView.showError(error)
     }
 
-    private func observeErrors() {
+    func observeErrors() {
         barometer.onError = { [altitudeView] error in
             altitudeView?.showError(error)
         }
     }
 
-    private func observePressure() {
+    func observePressure() {
         barometer.onDidMeasurePressure = { [altitudeView] pressure in
             let altitude = Altitude(pressure: pressure)
             altitudeView?.showAltitude(altitude)
         }
     }
+}
 
+private extension AltitudeViewController {
+    static var preferredBarometerType: Barometer.Type {
+        return SimulatedBarometer.isPressureDataAvailable ? SimulatedBarometer.self : DeviceBarometer.self
+    }
+}
+
+extension AltitudeViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
