@@ -1,13 +1,14 @@
 import EverestmeterCore
 
-typealias BarometerPressureHandler = (Pressure) -> Void
-typealias BarometerErrorHandler = (String) -> Void
+enum BarometerOutput {
+    case none
+    case pressure(Pressure)
+    case error(String)
+}
 
 protocol Barometer: class {
-    static var isPressureDataAvailable: Bool { get }
-
-    var onDidMeasurePressure: BarometerPressureHandler? { get set }
-    var onError: BarometerErrorHandler? { get set }
+    var output: BarometerOutput { get }
+    var onDidUpdateOutput: () -> Void { get set }
 
     init()
 
