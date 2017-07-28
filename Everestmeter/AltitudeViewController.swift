@@ -2,46 +2,43 @@ import UIKit
 import EverestmeterCore
 
 final class AltitudeViewController: UIViewController {
-    @IBOutlet private var altitudeView: AltitudeView!
+    @IBOutlet fileprivate var altitudeView: AltitudeView!
+    fileprivate let barometer: Barometer = SimulatedBarometer.isAvailable ? SimulatedBarometer() : DeviceBarometer()
+}
 
-    private let barometer = preferredBarometerType.init()
-
-    static var preferredBarometerType: Barometer.Type {
-        return SimulatedBarometer.isPressureDataAvailable ? SimulatedBarometer.self : DeviceBarometer.self
+extension AltitudeViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        barometer.onDidUpdateOutput = { [altitudeView, barometer] in
+            altitudeView?.configure(with: barometer.output)
+        }
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        showAltitude()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        altitudeView.configure(with: barometer.output)
     }
+}
 
-    private func showAltitude() {
-        checkPressureAvailability()
-        observeErrors()
-        observePressure()
+extension AltitudeViewController {
+    func startMeasuring() {
         barometer.startMeasuring()
     }
 
-    private func checkPressureAvailability() {
-        guard !AltitudeViewController.preferredBarometerType.isPressureDataAvailable else { return }
-        let error = NSLocalizedString("Barometer Not Available", comment: "")
-        altitudeView.showError(error)
+    func stopMeasuring() {
+        barometer.stopMeasuring()
     }
+}
 
-    private func observeErrors() {
-        barometer.onError = { [altitudeView] error in
-            altitudeView?.showError(error)
-        }
-    }
-
-    private func observePressure() {
-        barometer.onDidMeasurePressure = { [altitudeView] pressure in
-            let altitude = Altitude(pressure: pressure)
-            altitudeView?.showAltitude(altitude)
-        }
-    }
-
+extension AltitudeViewController {
     override var prefersStatusBarHidden: Bool {
+        return true
+    }
+}
+
+private extension SimulatedBarometer {
+    static var isAvailable: Bool {
+        if case .none = SimulatedBarometer().output { return false }
         return true
     }
 }

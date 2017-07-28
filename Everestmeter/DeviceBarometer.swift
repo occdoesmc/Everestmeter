@@ -2,20 +2,20 @@ import CoreMotion
 import EverestmeterCore
 
 final class DeviceBarometer: Barometer {
-    var onDidMeasurePressure: BarometerPressureHandler?
-    var onError: BarometerErrorHandler?
+    var output: BarometerOutput = .none
+    var onDidUpdateOutput: () -> Void = {}
     fileprivate let altimeter = CMAltimeter()
     init() {}
 }
 
 extension DeviceBarometer {
-    static var isPressureDataAvailable: Bool {
-        return CMAltimeter.isRelativeAltitudeAvailable()
-    }
-}
-
-extension DeviceBarometer {
     func startMeasuring() {
+        guard CMAltimeter.isRelativeAltitudeAvailable() else {
+            let error = NSLocalizedString("Barometer Not Available", comment: "")
+            output = .error(error)
+            onDidUpdateOutput()
+            return
+        }
         let operationQueue = OperationQueue()
         altimeter.startRelativeAltitudeUpdates(to: operationQueue) { [weak self] altitudeData, error in
             OperationQueue.main.addOperation {
@@ -33,15 +33,15 @@ extension DeviceBarometer {
 private extension DeviceBarometer {
     func process(_ altitudeData: CMAltitudeData?) {
         guard let altitudeData = altitudeData else { return }
-        guard let handler = onDidMeasurePressure else { return }
         let kilopascals = Double(altitudeData.pressure)
         let pressure = Pressure(kilopascals: kilopascals)
-        handler(pressure)
+        output = .pressure(pressure)
+        onDidUpdateOutput()
     }
 
     func process(_ error: Error?) {
         guard let error = error else { return }
-        guard let handler = onError else { return }
-        handler(error.localizedDescription)
+        output = .error(error.localizedDescription)
+        onDidUpdateOutput()
     }
 }

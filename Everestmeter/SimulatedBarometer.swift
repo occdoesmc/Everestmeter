@@ -2,30 +2,25 @@ import Foundation
 import EverestmeterCore
 
 final class SimulatedBarometer: Barometer {
-    var onDidMeasurePressure: BarometerPressureHandler?
-    var onError: BarometerErrorHandler?
-    init() {}
-}
+    var output: BarometerOutput
+    var onDidUpdateOutput: () -> Void = {}
 
-extension SimulatedBarometer {
-    static var isPressureDataAvailable: Bool {
+    init() {
         switch SimulatedBarometer.pressure {
-        case .none: return false
-        default: return true
+        case .none:
+            output = .none
+        case .some(let value):
+            let pressure = Pressure(kilopascals: value)
+            output = .pressure(pressure)
+        case .error(let error):
+            output = .error(error)
         }
     }
 }
 
 extension SimulatedBarometer {
     func startMeasuring() {
-        switch SimulatedBarometer.pressure {
-        case .none:
-            fatalError()
-        case .some(let value):
-            onDidMeasurePressure?(Pressure(kilopascals: value))
-        case .error(let error):
-            onError?(error)
-        }
+        onDidUpdateOutput()
     }
 
     func stopMeasuring() {}
