@@ -2,8 +2,8 @@ import UIKit
 import EverestmeterCore
 
 final class AltitudeViewController: UIViewController {
-    @IBOutlet fileprivate var altitudeView: AltitudeView!
-    fileprivate let barometer: Barometer = SimulatedBarometer.isAvailable ? SimulatedBarometer() : DeviceBarometer()
+    @IBOutlet private var altitudeView: AltitudeView!
+    private let barometer: Barometer = SimulatedBarometer.isAvailable ? SimulatedBarometer() : DeviceBarometer()
 }
 
 extension AltitudeViewController {

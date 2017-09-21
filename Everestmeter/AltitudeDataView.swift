@@ -2,9 +2,9 @@ import UIKit
 import EverestmeterCore
 
 final class AltitudeDataView: UIView {
-    @IBOutlet fileprivate var altitudeLabel: UILabel!
-    @IBOutlet fileprivate var gaugeTopConstraint: NSLayoutConstraint!
-    @IBOutlet fileprivate var gaugeHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private var altitudeLabel: UILabel!
+    @IBOutlet private var gaugeTopConstraint: NSLayoutConstraint!
+    @IBOutlet private var gaugeHeightConstraint: NSLayoutConstraint!
 }
 
 extension AltitudeDataView {

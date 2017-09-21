@@ -18,6 +18,6 @@ final class AltitudeTests: XCTestCase {
     func testCalculatesAltitude1000Meters() {
         let pressure = Pressure(kilopascals: 90.1492)
         let altitude = Altitude(pressure: pressure)
-        XCTAssertEqualWithAccuracy(altitude.meters, 1000, accuracy: 0.1)
+        XCTAssertEqual(altitude.meters, 1000, accuracy: 0.1)
     }
 }

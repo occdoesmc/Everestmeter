@@ -4,7 +4,7 @@ import EverestmeterCore
 final class DeviceBarometer: Barometer {
     var output: BarometerOutput = .none
     var onDidUpdateOutput: () -> Void = {}
-    fileprivate let altimeter = CMAltimeter()
+    private let altimeter = CMAltimeter()
     init() {}
 }
 
@@ -33,7 +33,7 @@ extension DeviceBarometer {
 private extension DeviceBarometer {
     func process(_ altitudeData: CMAltitudeData?) {
         guard let altitudeData = altitudeData else { return }
-        let kilopascals = Double(altitudeData.pressure)
+        let kilopascals = Double(truncating: altitudeData.pressure)
         let pressure = Pressure(kilopascals: kilopascals)
         output = .pressure(pressure)
         onDidUpdateOutput()

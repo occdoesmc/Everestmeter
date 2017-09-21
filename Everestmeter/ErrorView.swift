@@ -1,7 +1,7 @@
 import UIKit
 
 final class ErrorView: UIView {
-    @IBOutlet fileprivate var errorLabel: UILabel!
+    @IBOutlet private var errorLabel: UILabel!
 }
 
 extension ErrorView {

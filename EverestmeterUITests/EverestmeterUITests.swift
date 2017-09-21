@@ -1,7 +1,7 @@
 import XCTest
 
 final class EverestmeterUITests: XCTestCase {
-    fileprivate let app = XCUIApplication()
+    private let app = XCUIApplication()
 }
 
 extension EverestmeterUITests {
