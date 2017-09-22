@@ -2,8 +2,8 @@ import UIKit
 import EverestmeterCore
 
 final class AltitudeView: UIView {
-    @IBOutlet fileprivate var dataView: AltitudeDataView!
-    @IBOutlet fileprivate var errorView: ErrorView!
+    @IBOutlet private var dataView: AltitudeDataView!
+    @IBOutlet private var errorView: ErrorView!
 }
 
 extension AltitudeView {
