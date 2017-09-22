@@ -520,7 +520,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = swiftlint;
+			shellScript = /usr/local/bin/swiftlint;
 			showEnvVarsInLog = 0;
 		};
 		55A795281F261DD80070D23F /* Run SwiftLint */ = {
@@ -535,7 +535,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = swiftlint;
+			shellScript = /usr/local/bin/swiftlint;
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
