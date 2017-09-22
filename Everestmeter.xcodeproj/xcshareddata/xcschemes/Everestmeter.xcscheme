@@ -87,7 +87,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "SIMULATED_PRESSURE"
-            value = "100"
+            value = "40"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
