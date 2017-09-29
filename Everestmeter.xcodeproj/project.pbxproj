@@ -55,6 +55,9 @@
 		55D0C46E1F7EA86D00EFEDC4 /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
 		55D0C46F1F7EA86D00EFEDC4 /* SimulatedBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */; };
 		55D0C4701F7EA86D00EFEDC4 /* DeviceBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */; };
+		55D0C4771F7EAD3B00EFEDC4 /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
+		55D0C4781F7EAD3B00EFEDC4 /* DeviceBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */; };
+		55D0C4791F7EAD3B00EFEDC4 /* SimulatedBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */; };
 		55E685AE1F20F1540048BB73 /* EverestBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AD1F20F1540048BB73 /* EverestBottom.png */; };
 		55E685B01F20F15A0048BB73 /* EverestTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AF1F20F15A0048BB73 /* EverestTop.png */; };
 /* End PBXBuildFile section */
@@ -949,6 +952,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D0C4771F7EAD3B00EFEDC4 /* Barometer.swift in Sources */,
+				55D0C4791F7EAD3B00EFEDC4 /* SimulatedBarometer.swift in Sources */,
+				55D0C4781F7EAD3B00EFEDC4 /* DeviceBarometer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
