@@ -30,6 +30,17 @@
 		5552D7181F1F968700216796 /* AltitudeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7171F1F968700216796 /* AltitudeDataView.swift */; };
 		5552D71A1F1F96CD00216796 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7191F1F96CD00216796 /* ErrorView.swift */; };
 		5552D71C1F1F979300216796 /* AltitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D71B1F1F979300216796 /* AltitudeView.swift */; };
+		55669F711F7E9D4A00BA7D83 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55669F6F1F7E9D4A00BA7D83 /* Interface.storyboard */; };
+		55669F731F7E9D4A00BA7D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55669F721F7E9D4A00BA7D83 /* Assets.xcassets */; };
+		55669F7A1F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55669F891F7E9D4B00BA7D83 /* EverestmeterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 55669F6D1F7E9D4A00BA7D83 /* EverestmeterWatch.app */; };
+		55669F9B1F7EA22E00BA7D83 /* EverestmeterShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55669F9E1F7EA22E00BA7D83 /* EverestmeterShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */; };
+		55669F9F1F7EA22E00BA7D83 /* EverestmeterShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55669FAF1F7EA25800BA7D83 /* EverestmeterWatchShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */; };
+		55669FB01F7EA25800BA7D83 /* EverestmeterWatchShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55669FC11F7EA28300BA7D83 /* EverestmeterWatchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */; };
+		55669FC21F7EA28300BA7D83 /* EverestmeterWatchCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		556BCC191F1CE8F10048F34B /* EverestmeterDesktop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BCC101F1CE8F10048F34B /* EverestmeterDesktop.framework */; };
 		556BCC291F1CEA860048F34B /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430001EF4408F00DF9872 /* Altitude.swift */; };
 		556BCC2A1F1CEA860048F34B /* AltitudeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430031EF4408F00DF9872 /* AltitudeDescription.swift */; };
@@ -41,6 +52,10 @@
 		556BCC301F1CEA9F0048F34B /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
 		556BCC311F1CEA9F0048F34B /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
 		556BCC331F1CFCE10048F34B /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
+		55D0C4651F7EA6AC00EFEDC4 /* AssetsExtension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D0C4641F7EA6A700EFEDC4 /* AssetsExtension.xcassets */; };
+		55D0C46A1F7EA6E000EFEDC4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4681F7EA6DB00EFEDC4 /* ComplicationController.swift */; };
+		55D0C46B1F7EA6E000EFEDC4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4691F7EA6DB00EFEDC4 /* ExtensionDelegate.swift */; };
+		55D0C46C1F7EA6E000EFEDC4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4671F7EA6DB00EFEDC4 /* InterfaceController.swift */; };
 		55E685AE1F20F1540048BB73 /* EverestBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AD1F20F1540048BB73 /* EverestBottom.png */; };
 		55E685B01F20F15A0048BB73 /* EverestTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AF1F20F15A0048BB73 /* EverestTop.png */; };
 /* End PBXBuildFile section */
@@ -74,6 +89,41 @@
 			remoteGlobalIDString = 55142FD51EF43D2500DF9872;
 			remoteInfo = EverestmeterCore;
 		};
+		55669F7B1F7E9D4A00BA7D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55669F781F7E9D4A00BA7D83;
+			remoteInfo = "EverestmeterWatch Extension";
+		};
+		55669F871F7E9D4B00BA7D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55669F6C1F7E9D4A00BA7D83;
+			remoteInfo = EverestmeterWatch;
+		};
+		55669F9C1F7EA22E00BA7D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55669F961F7EA22E00BA7D83;
+			remoteInfo = EverestmeterShared;
+		};
+		55669FAD1F7EA25800BA7D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55669FA71F7EA25800BA7D83;
+			remoteInfo = EverestmeterWatchShared;
+		};
+		55669FBF1F7EA28300BA7D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55669FB91F7EA28300BA7D83;
+			remoteInfo = EverestmeterWatchCore;
+		};
 		556BCC1A1F1CE8F10048F34B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55142F981EF43C9900DF9872 /* Project object */;
@@ -90,7 +140,42 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				55669F9F1F7EA22E00BA7D83 /* EverestmeterShared.framework in Embed Frameworks */,
 				55142FEC1EF43D2500DF9872 /* EverestmeterCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F8F1F7E9D4B00BA7D83 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55669F7A1F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F911F7E9D4B00BA7D83 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				55669F891F7E9D4B00BA7D83 /* EverestmeterWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FB41F7EA25800BA7D83 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55669FC21F7EA28300BA7D83 /* EverestmeterWatchCore.framework in Embed Frameworks */,
+				55669FB01F7EA25800BA7D83 /* EverestmeterWatchShared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,11 +211,28 @@
 		5552D7171F1F968700216796 /* AltitudeDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeDataView.swift; sourceTree = "<group>"; };
 		5552D7191F1F96CD00216796 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5552D71B1F1F979300216796 /* AltitudeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeView.swift; sourceTree = "<group>"; };
+		55669F6D1F7E9D4A00BA7D83 /* EverestmeterWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverestmeterWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55669F701F7E9D4A00BA7D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		55669F721F7E9D4A00BA7D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55669F741F7E9D4A00BA7D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EverestmeterWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EverestmeterShared.h; sourceTree = "<group>"; };
+		55669F9A1F7EA22E00BA7D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterWatchShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterWatchCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556BCC101F1CE8F10048F34B /* EverestmeterDesktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterDesktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		556BCC181F1CE8F10048F34B /* EverestmeterDesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverestmeterDesktopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		556BCC271F1CE9C40048F34B /* InfoDesktop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoDesktop.plist; sourceTree = "<group>"; };
 		556BCC281F1CE9C40048F34B /* InfoDesktopTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoDesktopTests.plist; sourceTree = "<group>"; };
 		556BCC321F1CFCE10048F34B /* Barometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barometer.swift; sourceTree = "<group>"; };
+		55D0C4621F7EA66300EFEDC4 /* InfoWatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoWatch.plist; sourceTree = "<group>"; };
+		55D0C4631F7EA68300EFEDC4 /* InfoWatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoWatch.plist; sourceTree = "<group>"; };
+		55D0C4641F7EA6A700EFEDC4 /* AssetsExtension.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsExtension.xcassets; sourceTree = "<group>"; };
+		55D0C4661F7EA6BB00EFEDC4 /* InfoExtension.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoExtension.plist; sourceTree = "<group>"; };
+		55D0C4671F7EA6DB00EFEDC4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		55D0C4681F7EA6DB00EFEDC4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		55D0C4691F7EA6DB00EFEDC4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		55E685AD1F20F1540048BB73 /* EverestBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EverestBottom.png; sourceTree = "<group>"; };
 		55E685AF1F20F15A0048BB73 /* EverestTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EverestTop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55669F9E1F7EA22E00BA7D83 /* EverestmeterShared.framework in Frameworks */,
 				55142FEB1EF43D2500DF9872 /* EverestmeterCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +269,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55669F761F7E9D4A00BA7D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55669FC11F7EA28300BA7D83 /* EverestmeterWatchCore.framework in Frameworks */,
+				55669FAF1F7EA25800BA7D83 /* EverestmeterWatchShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F931F7EA22E00BA7D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FA41F7EA25800BA7D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FB61F7EA28300BA7D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		556BCC0C1F1CE8F10048F34B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,8 +321,10 @@
 			isa = PBXGroup;
 			children = (
 				55142FA21EF43C9900DF9872 /* Everestmeter */,
-				55142FC21EF43C9900DF9872 /* EverestmeterUITests */,
+				55669F981F7EA22E00BA7D83 /* EverestmeterShared */,
 				55142FD71EF43D2500DF9872 /* EverestmeterCore */,
+				55142FC21EF43C9900DF9872 /* EverestmeterUITests */,
+				55669F6E1F7E9D4A00BA7D83 /* EverestmeterWatch */,
 				55142FA11EF43C9900DF9872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,6 +338,11 @@
 				55142FDE1EF43D2500DF9872 /* EverestmeterCoreTests.xctest */,
 				556BCC101F1CE8F10048F34B /* EverestmeterDesktop.framework */,
 				556BCC181F1CE8F10048F34B /* EverestmeterDesktopTests.xctest */,
+				55669F6D1F7E9D4A00BA7D83 /* EverestmeterWatch.app */,
+				55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */,
+				55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */,
+				55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */,
+				55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,14 +393,62 @@
 				55142FF41EF43DAA00DF9872 /* InfoTests.plist */,
 				556BCC271F1CE9C40048F34B /* InfoDesktop.plist */,
 				556BCC281F1CE9C40048F34B /* InfoDesktopTests.plist */,
+				55D0C4631F7EA68300EFEDC4 /* InfoWatch.plist */,
 			);
 			path = EverestmeterCore;
+			sourceTree = "<group>";
+		};
+		55669F6E1F7E9D4A00BA7D83 /* EverestmeterWatch */ = {
+			isa = PBXGroup;
+			children = (
+				55669F6F1F7E9D4A00BA7D83 /* Interface.storyboard */,
+				55D0C4681F7EA6DB00EFEDC4 /* ComplicationController.swift */,
+				55D0C4691F7EA6DB00EFEDC4 /* ExtensionDelegate.swift */,
+				55D0C4671F7EA6DB00EFEDC4 /* InterfaceController.swift */,
+				55669F721F7E9D4A00BA7D83 /* Assets.xcassets */,
+				55D0C4641F7EA6A700EFEDC4 /* AssetsExtension.xcassets */,
+				55669F741F7E9D4A00BA7D83 /* Info.plist */,
+				55D0C4661F7EA6BB00EFEDC4 /* InfoExtension.plist */,
+			);
+			path = EverestmeterWatch;
+			sourceTree = "<group>";
+		};
+		55669F981F7EA22E00BA7D83 /* EverestmeterShared */ = {
+			isa = PBXGroup;
+			children = (
+				55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */,
+				55669F9A1F7EA22E00BA7D83 /* Info.plist */,
+				55D0C4621F7EA66300EFEDC4 /* InfoWatch.plist */,
+			);
+			path = EverestmeterShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		55142FD31EF43D2500DF9872 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F941F7EA22E00BA7D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55669F9B1F7EA22E00BA7D83 /* EverestmeterShared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FA51F7EA25800BA7D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FB71F7EA28300BA7D83 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,11 +473,14 @@
 				55142F9D1EF43C9900DF9872 /* Frameworks */,
 				55142F9E1EF43C9900DF9872 /* Resources */,
 				55142FF01EF43D2500DF9872 /* Embed Frameworks */,
+				55669F911F7E9D4B00BA7D83 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				55142FEA1EF43D2500DF9872 /* PBXTargetDependency */,
+				55669F881F7E9D4B00BA7D83 /* PBXTargetDependency */,
+				55669F9D1F7EA22E00BA7D83 /* PBXTargetDependency */,
 			);
 			name = Everestmeter;
 			productName = Everestmeter;
@@ -352,6 +543,97 @@
 			productReference = 55142FDE1EF43D2500DF9872 /* EverestmeterCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		55669F6C1F7E9D4A00BA7D83 /* EverestmeterWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55669F901F7E9D4B00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatch" */;
+			buildPhases = (
+				55669F6B1F7E9D4A00BA7D83 /* Resources */,
+				55669F8F1F7E9D4B00BA7D83 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55669F7C1F7E9D4A00BA7D83 /* PBXTargetDependency */,
+			);
+			name = EverestmeterWatch;
+			productName = EverestmeterWatch;
+			productReference = 55669F6D1F7E9D4A00BA7D83 /* EverestmeterWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		55669F781F7E9D4A00BA7D83 /* EverestmeterWatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55669F8E1F7E9D4B00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchExtension" */;
+			buildPhases = (
+				55669F751F7E9D4A00BA7D83 /* Sources */,
+				55669F761F7E9D4A00BA7D83 /* Frameworks */,
+				55669F771F7E9D4A00BA7D83 /* Resources */,
+				55669FB41F7EA25800BA7D83 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55669FAE1F7EA25800BA7D83 /* PBXTargetDependency */,
+				55669FC01F7EA28300BA7D83 /* PBXTargetDependency */,
+			);
+			name = EverestmeterWatchExtension;
+			productName = "EverestmeterWatch Extension";
+			productReference = 55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		55669F961F7EA22E00BA7D83 /* EverestmeterShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55669FA01F7EA22E00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterShared" */;
+			buildPhases = (
+				55669F921F7EA22E00BA7D83 /* Sources */,
+				55669F931F7EA22E00BA7D83 /* Frameworks */,
+				55669F941F7EA22E00BA7D83 /* Headers */,
+				55669F951F7EA22E00BA7D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EverestmeterShared;
+			productName = EverestmeterShared;
+			productReference = 55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55669FA71F7EA25800BA7D83 /* EverestmeterWatchShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55669FB11F7EA25800BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchShared" */;
+			buildPhases = (
+				55669FA31F7EA25800BA7D83 /* Sources */,
+				55669FA41F7EA25800BA7D83 /* Frameworks */,
+				55669FA51F7EA25800BA7D83 /* Headers */,
+				55669FA61F7EA25800BA7D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EverestmeterWatchShared;
+			productName = EverestmeterWatchShared;
+			productReference = 55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55669FB91F7EA28300BA7D83 /* EverestmeterWatchCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55669FC31F7EA28300BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchCore" */;
+			buildPhases = (
+				55669FB51F7EA28300BA7D83 /* Sources */,
+				55669FB61F7EA28300BA7D83 /* Frameworks */,
+				55669FB71F7EA28300BA7D83 /* Headers */,
+				55669FB81F7EA28300BA7D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EverestmeterWatchCore;
+			productName = EverestmeterWatchCore;
+			productReference = 55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		556BCC0F1F1CE8F10048F34B /* EverestmeterDesktop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 556BCC211F1CE8F20048F34B /* Build configuration list for PBXNativeTarget "EverestmeterDesktop" */;
@@ -395,7 +677,7 @@
 		55142F981EF43C9900DF9872 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Orlando Cossia Castiglioni";
 				TargetAttributes = {
@@ -423,6 +705,26 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 55142F9F1EF43C9900DF9872;
+					};
+					55669F6C1F7E9D4A00BA7D83 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					55669F781F7E9D4A00BA7D83 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					55669F961F7EA22E00BA7D83 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					55669FA71F7EA25800BA7D83 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					55669FB91F7EA28300BA7D83 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 					556BCC0F1F1CE8F10048F34B = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -453,6 +755,11 @@
 				55142FDD1EF43D2500DF9872 /* EverestmeterCoreTests */,
 				556BCC0F1F1CE8F10048F34B /* EverestmeterDesktop */,
 				556BCC171F1CE8F10048F34B /* EverestmeterDesktopTests */,
+				55669F6C1F7E9D4A00BA7D83 /* EverestmeterWatch */,
+				55669F781F7E9D4A00BA7D83 /* EverestmeterWatchExtension */,
+				55669F961F7EA22E00BA7D83 /* EverestmeterShared */,
+				55669FA71F7EA25800BA7D83 /* EverestmeterWatchShared */,
+				55669FB91F7EA28300BA7D83 /* EverestmeterWatchCore */,
 			);
 		};
 /* End PBXProject section */
@@ -485,6 +792,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		55142FDC1EF43D2500DF9872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F6B1F7E9D4A00BA7D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55669F731F7E9D4A00BA7D83 /* Assets.xcassets in Resources */,
+				55669F711F7E9D4A00BA7D83 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F771F7E9D4A00BA7D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D0C4651F7EA6AC00EFEDC4 /* AssetsExtension.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F951F7EA22E00BA7D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FA61F7EA25800BA7D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FB81F7EA28300BA7D83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -587,6 +932,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55669F751F7E9D4A00BA7D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D0C46B1F7EA6E000EFEDC4 /* ExtensionDelegate.swift in Sources */,
+				55D0C46A1F7EA6E000EFEDC4 /* ComplicationController.swift in Sources */,
+				55D0C46C1F7EA6E000EFEDC4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669F921F7EA22E00BA7D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FA31F7EA25800BA7D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55669FB51F7EA28300BA7D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		556BCC0B1F1CE8F10048F34B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,6 +1009,31 @@
 			target = 55142FD51EF43D2500DF9872 /* EverestmeterCore */;
 			targetProxy = 55142FE91EF43D2500DF9872 /* PBXContainerItemProxy */;
 		};
+		55669F7C1F7E9D4A00BA7D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55669F781F7E9D4A00BA7D83 /* EverestmeterWatchExtension */;
+			targetProxy = 55669F7B1F7E9D4A00BA7D83 /* PBXContainerItemProxy */;
+		};
+		55669F881F7E9D4B00BA7D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55669F6C1F7E9D4A00BA7D83 /* EverestmeterWatch */;
+			targetProxy = 55669F871F7E9D4B00BA7D83 /* PBXContainerItemProxy */;
+		};
+		55669F9D1F7EA22E00BA7D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55669F961F7EA22E00BA7D83 /* EverestmeterShared */;
+			targetProxy = 55669F9C1F7EA22E00BA7D83 /* PBXContainerItemProxy */;
+		};
+		55669FAE1F7EA25800BA7D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55669FA71F7EA25800BA7D83 /* EverestmeterWatchShared */;
+			targetProxy = 55669FAD1F7EA25800BA7D83 /* PBXContainerItemProxy */;
+		};
+		55669FC01F7EA28300BA7D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55669FB91F7EA28300BA7D83 /* EverestmeterWatchCore */;
+			targetProxy = 55669FBF1F7EA28300BA7D83 /* PBXContainerItemProxy */;
+		};
 		556BCC1B1F1CE8F10048F34B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 556BCC0F1F1CE8F10048F34B /* EverestmeterDesktop */;
@@ -647,6 +1048,14 @@
 				55142FAD1EF43C9900DF9872 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		55669F6F1F7E9D4A00BA7D83 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55669F701F7E9D4A00BA7D83 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -762,6 +1171,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = LVYGD8LLE9;
 				INFOPLIST_FILE = Everestmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -777,6 +1187,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = LVYGD8LLE9;
 				INFOPLIST_FILE = Everestmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -889,6 +1300,266 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Everestmeter.app/Everestmeter";
+			};
+			name = Release;
+		};
+		55669F8A1F7E9D4B00BA7D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = EverestmeterWatch_Extension;
+				INFOPLIST_FILE = EverestmeterWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = OCC.Everestmeter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		55669F8B1F7E9D4B00BA7D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = EverestmeterWatch_Extension;
+				INFOPLIST_FILE = EverestmeterWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = OCC.Everestmeter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		55669F8C1F7E9D4B00BA7D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterWatch/InfoExtension.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OCC.Everestmeter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		55669F8D1F7E9D4B00BA7D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterWatch/InfoExtension.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OCC.Everestmeter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		55669FA11F7EA22E00BA7D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterShared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55669FA21F7EA22E00BA7D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterShared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55669FB21F7EA25800BA7D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterShared/InfoWatch.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterWatchShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		55669FB31F7EA25800BA7D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterShared/InfoWatch.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterWatchShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		55669FC41F7EA28300BA7D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterCore/InfoWatch.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterWatchCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		55669FC51F7EA28300BA7D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LVYGD8LLE9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = EverestmeterCore/InfoWatch.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterWatchCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -1022,6 +1693,51 @@
 			buildConfigurations = (
 				55142FF21EF43D2500DF9872 /* Debug */,
 				55142FF31EF43D2500DF9872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55669F8E1F7E9D4B00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55669F8C1F7E9D4B00BA7D83 /* Debug */,
+				55669F8D1F7E9D4B00BA7D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55669F901F7E9D4B00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55669F8A1F7E9D4B00BA7D83 /* Debug */,
+				55669F8B1F7E9D4B00BA7D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55669FA01F7EA22E00BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55669FA11F7EA22E00BA7D83 /* Debug */,
+				55669FA21F7EA22E00BA7D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55669FB11F7EA25800BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55669FB21F7EA25800BA7D83 /* Debug */,
+				55669FB31F7EA25800BA7D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55669FC31F7EA28300BA7D83 /* Build configuration list for PBXNativeTarget "EverestmeterWatchCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55669FC41F7EA28300BA7D83 /* Debug */,
+				55669FC51F7EA28300BA7D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
