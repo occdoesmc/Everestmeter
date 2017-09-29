@@ -1,5 +1,6 @@
 import UIKit
 import EverestmeterCore
+import EverestmeterShared
 
 final class AltitudeView: UIView {
     @IBOutlet private var dataView: AltitudeDataView!

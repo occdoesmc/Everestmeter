@@ -1,12 +1,12 @@
 import EverestmeterCore
 
-enum BarometerOutput {
+public enum BarometerOutput {
     case none
     case pressure(Pressure)
     case error(String)
 }
 
-protocol Barometer: class {
+public protocol Barometer: class {
     var output: BarometerOutput { get }
     var onDidUpdateOutput: () -> Void { get set }
 

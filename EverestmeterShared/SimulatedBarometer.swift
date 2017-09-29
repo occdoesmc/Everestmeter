@@ -1,11 +1,11 @@
 import Foundation
 import EverestmeterCore
 
-final class SimulatedBarometer: Barometer {
-    var output: BarometerOutput
-    var onDidUpdateOutput: () -> Void = {}
+public final class SimulatedBarometer: Barometer {
+    public var output: BarometerOutput
+    public var onDidUpdateOutput: () -> Void = {}
 
-    init() {
+    public init() {
         switch SimulatedBarometer.pressure {
         case .none:
             output = .none
@@ -18,7 +18,7 @@ final class SimulatedBarometer: Barometer {
     }
 }
 
-extension SimulatedBarometer {
+public extension SimulatedBarometer {
     func startMeasuring() {
         onDidUpdateOutput()
     }

@@ -1,14 +1,14 @@
 import CoreMotion
 import EverestmeterCore
 
-final class DeviceBarometer: Barometer {
-    var output: BarometerOutput = .none
-    var onDidUpdateOutput: () -> Void = {}
+public final class DeviceBarometer: Barometer {
+    public var output: BarometerOutput = .none
+    public var onDidUpdateOutput: () -> Void = {}
     private let altimeter = CMAltimeter()
-    init() {}
+    public init() {}
 }
 
-extension DeviceBarometer {
+public extension DeviceBarometer {
     func startMeasuring() {
         guard CMAltimeter.isRelativeAltitudeAvailable() else {
             let error = NSLocalizedString("Barometer Not Available", comment: "")

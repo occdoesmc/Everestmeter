@@ -25,8 +25,6 @@
 		5514301E1EF440B600DF9872 /* AltitudeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */; };
 		5514301F1EF440B600DF9872 /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
 		552EF4F91EFD727A00905CFD /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
-		553362ED1F28DB5300C7DF39 /* DeviceBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */; };
-		553362EF1F28DBCC00C7DF39 /* SimulatedBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */; };
 		5552D7181F1F968700216796 /* AltitudeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7171F1F968700216796 /* AltitudeDataView.swift */; };
 		5552D71A1F1F96CD00216796 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7191F1F96CD00216796 /* ErrorView.swift */; };
 		5552D71C1F1F979300216796 /* AltitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D71B1F1F979300216796 /* AltitudeView.swift */; };
@@ -34,7 +32,6 @@
 		55669F731F7E9D4A00BA7D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55669F721F7E9D4A00BA7D83 /* Assets.xcassets */; };
 		55669F7A1F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55669F891F7E9D4B00BA7D83 /* EverestmeterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 55669F6D1F7E9D4A00BA7D83 /* EverestmeterWatch.app */; };
-		55669F9B1F7EA22E00BA7D83 /* EverestmeterShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55669F9E1F7EA22E00BA7D83 /* EverestmeterShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */; };
 		55669F9F1F7EA22E00BA7D83 /* EverestmeterShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55669FAF1F7EA25800BA7D83 /* EverestmeterWatchShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */; };
@@ -51,11 +48,13 @@
 		556BCC2F1F1CEA9F0048F34B /* AltitudeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */; };
 		556BCC301F1CEA9F0048F34B /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
 		556BCC311F1CEA9F0048F34B /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
-		556BCC331F1CFCE10048F34B /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
 		55D0C4651F7EA6AC00EFEDC4 /* AssetsExtension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D0C4641F7EA6A700EFEDC4 /* AssetsExtension.xcassets */; };
 		55D0C46A1F7EA6E000EFEDC4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4681F7EA6DB00EFEDC4 /* ComplicationController.swift */; };
 		55D0C46B1F7EA6E000EFEDC4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4691F7EA6DB00EFEDC4 /* ExtensionDelegate.swift */; };
 		55D0C46C1F7EA6E000EFEDC4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0C4671F7EA6DB00EFEDC4 /* InterfaceController.swift */; };
+		55D0C46E1F7EA86D00EFEDC4 /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
+		55D0C46F1F7EA86D00EFEDC4 /* SimulatedBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */; };
+		55D0C4701F7EA86D00EFEDC4 /* DeviceBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */; };
 		55E685AE1F20F1540048BB73 /* EverestBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AD1F20F1540048BB73 /* EverestBottom.png */; };
 		55E685B01F20F15A0048BB73 /* EverestTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AF1F20F15A0048BB73 /* EverestTop.png */; };
 /* End PBXBuildFile section */
@@ -217,7 +216,6 @@
 		55669F741F7E9D4A00BA7D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55669F791F7E9D4A00BA7D83 /* EverestmeterWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EverestmeterWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		55669F971F7EA22E00BA7D83 /* EverestmeterShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EverestmeterShared.h; sourceTree = "<group>"; };
 		55669F9A1F7EA22E00BA7D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55669FA81F7EA25800BA7D83 /* EverestmeterWatchShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterWatchShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55669FBA1F7EA28300BA7D83 /* EverestmeterWatchCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EverestmeterWatchCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -355,9 +353,6 @@
 				5552D71B1F1F979300216796 /* AltitudeView.swift */,
 				5552D7171F1F968700216796 /* AltitudeDataView.swift */,
 				5552D7191F1F96CD00216796 /* ErrorView.swift */,
-				556BCC321F1CFCE10048F34B /* Barometer.swift */,
-				553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */,
-				553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */,
 				55142FF71EF4403500DF9872 /* Main.storyboard */,
 				55E685AF1F20F15A0048BB73 /* EverestTop.png */,
 				55E685AD1F20F1540048BB73 /* EverestBottom.png */,
@@ -416,7 +411,9 @@
 		55669F981F7EA22E00BA7D83 /* EverestmeterShared */ = {
 			isa = PBXGroup;
 			children = (
-				55669F991F7EA22E00BA7D83 /* EverestmeterShared.h */,
+				556BCC321F1CFCE10048F34B /* Barometer.swift */,
+				553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */,
+				553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */,
 				55669F9A1F7EA22E00BA7D83 /* Info.plist */,
 				55D0C4621F7EA66300EFEDC4 /* InfoWatch.plist */,
 			);
@@ -437,7 +434,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55669F9B1F7EA22E00BA7D83 /* EverestmeterShared.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,10 +890,7 @@
 				5552D71A1F1F96CD00216796 /* ErrorView.swift in Sources */,
 				55142FFE1EF4405C00DF9872 /* AltitudeViewController.swift in Sources */,
 				55142FA41EF43C9900DF9872 /* AppDelegate.swift in Sources */,
-				553362EF1F28DBCC00C7DF39 /* SimulatedBarometer.swift in Sources */,
 				5552D7181F1F968700216796 /* AltitudeDataView.swift in Sources */,
-				553362ED1F28DB5300C7DF39 /* DeviceBarometer.swift in Sources */,
-				556BCC331F1CFCE10048F34B /* Barometer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +939,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D0C4701F7EA86D00EFEDC4 /* DeviceBarometer.swift in Sources */,
+				55D0C46F1F7EA86D00EFEDC4 /* SimulatedBarometer.swift in Sources */,
+				55D0C46E1F7EA86D00EFEDC4 /* Barometer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
