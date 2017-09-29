@@ -1,8 +1,6 @@
-import EverestmeterCore
-
 public enum BarometerOutput {
     case none
-    case pressure(Pressure)
+    case kilopascals(Double)
     case error(String)
 }
 

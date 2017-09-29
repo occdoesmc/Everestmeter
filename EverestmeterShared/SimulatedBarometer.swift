@@ -1,5 +1,4 @@
 import Foundation
-import EverestmeterCore
 
 public final class SimulatedBarometer: Barometer {
     public var output: BarometerOutput
@@ -10,8 +9,7 @@ public final class SimulatedBarometer: Barometer {
         case .none:
             output = .none
         case .some(let value):
-            let pressure = Pressure(kilopascals: value)
-            output = .pressure(pressure)
+            output = .kilopascals(value)
         case .error(let error):
             output = .error(error)
         }

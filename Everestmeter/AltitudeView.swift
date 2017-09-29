@@ -12,7 +12,8 @@ extension AltitudeView {
         switch barometerOutput {
         case .none:
             showNothing()
-        case .pressure(let pressure):
+        case .kilopascals(let kilopascals):
+            let pressure = Pressure(kilopascals: kilopascals)
             let altitude = Altitude(pressure: pressure)
             showAltitude(altitude)
         case .error(let error):

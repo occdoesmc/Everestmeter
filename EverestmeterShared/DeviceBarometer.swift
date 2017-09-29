@@ -1,5 +1,4 @@
 import CoreMotion
-import EverestmeterCore
 
 public final class DeviceBarometer: Barometer {
     public var output: BarometerOutput = .none
@@ -34,8 +33,7 @@ private extension DeviceBarometer {
     func process(_ altitudeData: CMAltitudeData?) {
         guard let altitudeData = altitudeData else { return }
         let kilopascals = Double(truncating: altitudeData.pressure)
-        let pressure = Pressure(kilopascals: kilopascals)
-        output = .pressure(pressure)
+        output = .kilopascals(kilopascals)
         onDidUpdateOutput()
     }
 
