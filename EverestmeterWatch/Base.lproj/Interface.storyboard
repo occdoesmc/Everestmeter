@@ -14,8 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="EverestmeterWatchExtension">
                     <items>
-                        <label alignment="left" text="Label" id="avF-YD-4JF"/>
+                        <label alignment="left" text="Label" id="avF-YD-4JF">
+                            <fontDescription key="font" type="boldSystem" pointSize="42"/>
+                        </label>
                     </items>
+                    <connections>
+                        <outlet property="altitudeLabel" destination="avF-YD-4JF" id="W9T-FE-cEx"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

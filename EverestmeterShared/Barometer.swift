@@ -13,3 +13,7 @@ public protocol Barometer: class {
     func startMeasuring()
     func stopMeasuring()
 }
+
+public func makeBarometer() -> Barometer {
+    return SimulatedBarometer.isAvailable ? SimulatedBarometer() : DeviceBarometer()
+}

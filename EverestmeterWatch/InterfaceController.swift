@@ -1,27 +1,39 @@
-//
-//  InterfaceController.swift
-//  EverestmeterWatch Extension
-//
-//  Created by Orlando Cossia Castiglioni on 29.09.17.
-//  Copyright © 2017 Orlando Cossia Castiglioni. All rights reserved.
-//
-
 import WatchKit
-import Foundation
+import EverestmeterWatchCore
+import EverestmeterWatchShared
 
-class InterfaceController: WKInterfaceController {
+final class InterfaceController: WKInterfaceController {
+    @IBOutlet private var altitudeLabel: WKInterfaceLabel!
+    private let barometer = makeBarometer()
+}
+
+extension InterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        // Configure interface objects here.
+        barometer.onDidUpdateOutput = { [barometer, altitudeLabel] in
+            let text: String
+            switch barometer.output {
+            case .none:
+                text = "Not Available"
+            case .kilopascals(let kilopascals):
+                let pressure = Pressure(kilopascals: kilopascals)
+                let altitude = Altitude(pressure: pressure)
+                let altitudeDescription = AltitudeDescription(altitude: altitude)
+                text = altitudeDescription.text
+            case .error(let error):
+                text = error
+            }
+            altitudeLabel?.setText(text)
+        }
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        barometer.startMeasuring()
     }
 
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        barometer.stopMeasuring()
     }
 }

@@ -4,7 +4,7 @@ import EverestmeterShared
 
 final class AltitudeViewController: UIViewController {
     @IBOutlet private var altitudeView: AltitudeView!
-    private let barometer: Barometer = SimulatedBarometer.isAvailable ? SimulatedBarometer() : DeviceBarometer()
+    private let barometer = makeBarometer()
 }
 
 extension AltitudeViewController {
@@ -33,13 +33,6 @@ extension AltitudeViewController {
 
 extension AltitudeViewController {
     override var prefersStatusBarHidden: Bool {
-        return true
-    }
-}
-
-private extension SimulatedBarometer {
-    static var isAvailable: Bool {
-        if case .none = SimulatedBarometer().output { return false }
         return true
     }
 }

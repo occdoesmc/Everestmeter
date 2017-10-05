@@ -42,3 +42,10 @@ private extension SimulatedBarometer {
         return .some(value)
     }
 }
+
+extension SimulatedBarometer {
+    static var isAvailable: Bool {
+        if case .none = SimulatedBarometer().output { return false }
+        return true
+    }
+}
