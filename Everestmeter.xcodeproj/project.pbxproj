@@ -58,6 +58,11 @@
 		55D0C4771F7EAD3B00EFEDC4 /* Barometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BCC321F1CFCE10048F34B /* Barometer.swift */; };
 		55D0C4781F7EAD3B00EFEDC4 /* DeviceBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */; };
 		55D0C4791F7EAD3B00EFEDC4 /* SimulatedBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */; };
+		55E0C8231F8694B3006B1F77 /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430001EF4408F00DF9872 /* Altitude.swift */; };
+		55E0C8251F8694B3006B1F77 /* AltitudeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430031EF4408F00DF9872 /* AltitudeDescription.swift */; };
+		55E0C8271F8694B3006B1F77 /* AltitudeGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430061EF4408F00DF9872 /* AltitudeGauge.swift */; };
+		55E0C8291F8694B3006B1F77 /* Pressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300C1EF4408F00DF9872 /* Pressure.swift */; };
+		55E0C82B1F8694B3006B1F77 /* Double+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514300D1EF4408F00DF9872 /* Double+Power.swift */; };
 		55E685AE1F20F1540048BB73 /* EverestBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AD1F20F1540048BB73 /* EverestBottom.png */; };
 		55E685B01F20F15A0048BB73 /* EverestTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E685AF1F20F15A0048BB73 /* EverestTop.png */; };
 /* End PBXBuildFile section */
@@ -962,6 +967,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E0C8231F8694B3006B1F77 /* Altitude.swift in Sources */,
+				55E0C8271F8694B3006B1F77 /* AltitudeGauge.swift in Sources */,
+				55E0C8291F8694B3006B1F77 /* Pressure.swift in Sources */,
+				55E0C82B1F8694B3006B1F77 /* Double+Power.swift in Sources */,
+				55E0C8251F8694B3006B1F77 /* AltitudeDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
