@@ -1,7 +1,7 @@
 import Foundation
 
 public final class SimulatedBarometer: Barometer {
-    public var output: BarometerOutput
+    public private(set) var output: BarometerOutput
     public var onDidUpdateOutput: () -> Void = {}
 
     public init() {

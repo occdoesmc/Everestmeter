@@ -1,7 +1,7 @@
 import CoreMotion
 
 public final class DeviceBarometer: Barometer {
-    public var output: BarometerOutput = .none
+    public private(set) var output: BarometerOutput = .none
     public var onDidUpdateOutput: () -> Void = {}
     private let altimeter = CMAltimeter()
     public init() {}
