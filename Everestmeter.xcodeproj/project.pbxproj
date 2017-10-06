@@ -24,6 +24,15 @@
 		5514301D1EF440B600DF9872 /* AltitudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430021EF4408F00DF9872 /* AltitudeTests.swift */; };
 		5514301E1EF440B600DF9872 /* AltitudeDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430051EF4408F00DF9872 /* AltitudeDescriptionTests.swift */; };
 		5514301F1EF440B600DF9872 /* AltitudeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */; };
+		551C424D1F87D9760057A700 /* RemoteBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C424C1F87D9760057A700 /* RemoteBarometer.swift */; };
+		551C424E1F87D9760057A700 /* RemoteBarometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C424C1F87D9760057A700 /* RemoteBarometer.swift */; };
+		551C42501F87E65A0057A700 /* PressureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C424F1F87E65A0057A700 /* PressureMessage.swift */; };
+		551C42511F87E65A0057A700 /* PressureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C424F1F87E65A0057A700 /* PressureMessage.swift */; };
+		551C42521F87E65A0057A700 /* PressureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C424F1F87E65A0057A700 /* PressureMessage.swift */; };
+		551C42541F87E6820057A700 /* PressureMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C42531F87E6820057A700 /* PressureMessageTests.swift */; };
+		551C42551F87E6820057A700 /* PressureMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C42531F87E6820057A700 /* PressureMessageTests.swift */; };
+		551C42571F87E6BF0057A700 /* Pressure+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C42561F87E6BF0057A700 /* Pressure+Equatable.swift */; };
+		551C42581F87E6BF0057A700 /* Pressure+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C42561F87E6BF0057A700 /* Pressure+Equatable.swift */; };
 		552EF4F91EFD727A00905CFD /* PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EF4F81EFD727A00905CFD /* PressureTests.swift */; };
 		5552D7181F1F968700216796 /* AltitudeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7171F1F968700216796 /* AltitudeDataView.swift */; };
 		5552D71A1F1F96CD00216796 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552D7191F1F96CD00216796 /* ErrorView.swift */; };
@@ -212,6 +221,10 @@
 		551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltitudeGaugeTests.swift; sourceTree = "<group>"; };
 		5514300C1EF4408F00DF9872 /* Pressure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pressure.swift; sourceTree = "<group>"; };
 		5514300D1EF4408F00DF9872 /* Double+Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Power.swift"; sourceTree = "<group>"; };
+		551C424C1F87D9760057A700 /* RemoteBarometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteBarometer.swift; sourceTree = "<group>"; };
+		551C424F1F87E65A0057A700 /* PressureMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureMessage.swift; sourceTree = "<group>"; };
+		551C42531F87E6820057A700 /* PressureMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureMessageTests.swift; sourceTree = "<group>"; };
+		551C42561F87E6BF0057A700 /* Pressure+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pressure+Equatable.swift"; sourceTree = "<group>"; };
 		552EF4F81EFD727A00905CFD /* PressureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureTests.swift; sourceTree = "<group>"; };
 		553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceBarometer.swift; sourceTree = "<group>"; };
 		553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatedBarometer.swift; sourceTree = "<group>"; };
@@ -391,6 +404,9 @@
 				551430081EF4408F00DF9872 /* AltitudeGaugeTests.swift */,
 				5514300C1EF4408F00DF9872 /* Pressure.swift */,
 				552EF4F81EFD727A00905CFD /* PressureTests.swift */,
+				551C42561F87E6BF0057A700 /* Pressure+Equatable.swift */,
+				551C424F1F87E65A0057A700 /* PressureMessage.swift */,
+				551C42531F87E6820057A700 /* PressureMessageTests.swift */,
 				5514300D1EF4408F00DF9872 /* Double+Power.swift */,
 				55142FD91EF43D2500DF9872 /* Info.plist */,
 				55142FF41EF43DAA00DF9872 /* InfoTests.plist */,
@@ -422,6 +438,7 @@
 				556BCC321F1CFCE10048F34B /* Barometer.swift */,
 				553362EC1F28DB5300C7DF39 /* DeviceBarometer.swift */,
 				553362EE1F28DBCC00C7DF39 /* SimulatedBarometer.swift */,
+				551C424C1F87D9760057A700 /* RemoteBarometer.swift */,
 				55669F9A1F7EA22E00BA7D83 /* Info.plist */,
 				55D0C4621F7EA66300EFEDC4 /* InfoWatch.plist */,
 			);
@@ -732,10 +749,12 @@
 					};
 					556BCC0F1F1CE8F10048F34B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					556BCC171F1CE8F10048F34B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -916,6 +935,7 @@
 			files = (
 				5514301B1EF4408F00DF9872 /* Pressure.swift in Sources */,
 				551430121EF4408F00DF9872 /* AltitudeDescription.swift in Sources */,
+				551C42501F87E65A0057A700 /* PressureMessage.swift in Sources */,
 				551430151EF4408F00DF9872 /* AltitudeGauge.swift in Sources */,
 				5514301C1EF4408F00DF9872 /* Double+Power.swift in Sources */,
 				5514300F1EF4408F00DF9872 /* Altitude.swift in Sources */,
@@ -927,7 +947,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				552EF4F91EFD727A00905CFD /* PressureTests.swift in Sources */,
+				551C42571F87E6BF0057A700 /* Pressure+Equatable.swift in Sources */,
 				5514301F1EF440B600DF9872 /* AltitudeGaugeTests.swift in Sources */,
+				551C42541F87E6820057A700 /* PressureMessageTests.swift in Sources */,
 				5514301E1EF440B600DF9872 /* AltitudeDescriptionTests.swift in Sources */,
 				5514301D1EF440B600DF9872 /* AltitudeTests.swift in Sources */,
 			);
@@ -948,6 +970,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D0C4701F7EA86D00EFEDC4 /* DeviceBarometer.swift in Sources */,
+				551C424D1F87D9760057A700 /* RemoteBarometer.swift in Sources */,
 				55D0C46F1F7EA86D00EFEDC4 /* SimulatedBarometer.swift in Sources */,
 				55D0C46E1F7EA86D00EFEDC4 /* Barometer.swift in Sources */,
 			);
@@ -958,6 +981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D0C4771F7EAD3B00EFEDC4 /* Barometer.swift in Sources */,
+				551C424E1F87D9760057A700 /* RemoteBarometer.swift in Sources */,
 				55D0C4791F7EAD3B00EFEDC4 /* SimulatedBarometer.swift in Sources */,
 				55D0C4781F7EAD3B00EFEDC4 /* DeviceBarometer.swift in Sources */,
 			);
@@ -969,6 +993,7 @@
 			files = (
 				55E0C8231F8694B3006B1F77 /* Altitude.swift in Sources */,
 				55E0C8271F8694B3006B1F77 /* AltitudeGauge.swift in Sources */,
+				551C42521F87E65A0057A700 /* PressureMessage.swift in Sources */,
 				55E0C8291F8694B3006B1F77 /* Pressure.swift in Sources */,
 				55E0C82B1F8694B3006B1F77 /* Double+Power.swift in Sources */,
 				55E0C8251F8694B3006B1F77 /* AltitudeDescription.swift in Sources */,
@@ -981,6 +1006,7 @@
 			files = (
 				556BCC2D1F1CEA860048F34B /* Double+Power.swift in Sources */,
 				556BCC2C1F1CEA860048F34B /* Pressure.swift in Sources */,
+				551C42511F87E65A0057A700 /* PressureMessage.swift in Sources */,
 				556BCC2A1F1CEA860048F34B /* AltitudeDescription.swift in Sources */,
 				556BCC2B1F1CEA860048F34B /* AltitudeGauge.swift in Sources */,
 				556BCC291F1CEA860048F34B /* Altitude.swift in Sources */,
@@ -992,7 +1018,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				556BCC311F1CEA9F0048F34B /* PressureTests.swift in Sources */,
+				551C42581F87E6BF0057A700 /* Pressure+Equatable.swift in Sources */,
 				556BCC301F1CEA9F0048F34B /* AltitudeGaugeTests.swift in Sources */,
+				551C42551F87E6820057A700 /* PressureMessageTests.swift in Sources */,
 				556BCC2F1F1CEA9F0048F34B /* AltitudeDescriptionTests.swift in Sources */,
 				556BCC2E1F1CEA9F0048F34B /* AltitudeTests.swift in Sources */,
 			);
@@ -1595,7 +1623,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1621,7 +1650,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1640,7 +1670,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterDesktopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1657,7 +1688,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.occ.EverestmeterDesktopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
